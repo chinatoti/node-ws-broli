@@ -1,0 +1,5 @@
+1. main分支的index.js是母代码，修改index.js的13行UUID,混淆后
+覆盖hug分支的index.js.
+2. 修改main分支的.github/workflows/build-hug-image.yml文件，
+修改第50行，ghcr.io/${{ steps.vars.outputs.owner_lower }}/XXXXXXXXXXX:latest
+XXXXXXXXXXX要自定义一个名字。
